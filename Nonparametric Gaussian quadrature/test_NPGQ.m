@@ -1,7 +1,7 @@
-I = 10000; % sample size
+I = 1000; % sample size
 
 mu = 0;
-sigma = 0.2;
+sigma = 0.8;
 alpha = 2;
 beta = 1;
 U = rand(I,1); % uniform random variable
@@ -12,7 +12,7 @@ data = Normal + Laplace; % normal-Laplace random variable
 
 histogram(data);
 
-N = 9; % number of grid points
+N = 10; % number of grid points
 
 tic
 [x,w] = NPGQ(data,N);
